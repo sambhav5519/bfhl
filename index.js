@@ -13,8 +13,8 @@ app.post('/bfhl', (req, res) => {
             user_id: "sambhav_sharma_06012004",
             email: "sambhav1250.be21@chitkara.edu.in",
             roll_number: "2110991250",
-            even: data.filter(num => num % 2 === 0),
-            odd: data.filter(num => num % 2 !== 0),
+            even: data.filter(num => parseInt(num) % 2 === 0),
+            odd: data.filter(num => parseInt(num )% 2 !== 0),
             alpha: data.filter(val => typeof val === 'string').map(val => val.toUpperCase()),
 
 
